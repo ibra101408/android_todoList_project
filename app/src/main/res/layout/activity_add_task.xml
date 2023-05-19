@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/flip"
+    tools:context=".AddTaskActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="80dp"
+                android:padding="20dp"
+                >
+
+            <!--hello msg-->
+            <TextView
+                android:id="@+id/addingTaskText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_task"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"
+                />
+
+
+                <!--           Title             -->
+                <EditText
+                    android:id="@+id/task_title"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/phTitle"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                />
+
+
+                <!--            Description            -->
+                <EditText
+                    android:id="@+id/task_description"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/phDescription"
+                    android:padding="30dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+
+                />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/saveTaskBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+
+                    android:text="@string/add_task"
+                    android:background="@drawable/round_button"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

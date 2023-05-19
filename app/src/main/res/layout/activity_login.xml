@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/flip"
+    tools:context=".LoginActivity">
+
+    <include layout="@layout/activity_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="80dp"
+                android:padding="20dp"
+                >
+
+                <!--hello msg-->
+                <TextView
+                    android:id="@+id/hi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello_second_fragment"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.3"
+
+                    />
+
+                <!--signUp msg-->
+                <TextView
+                    android:id="@+id/signIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/signIn"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.4" />
+
+
+                <!--           email             -->
+                <EditText
+                    android:id="@+id/signIn_email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/phEmail"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+
+                    app:layout_constraintTop_toBottomOf="@id/signIn" />
+
+
+                <!--            Password            -->
+                <EditText
+                    android:id="@+id/signIn_password"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/phPassword"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+
+                    app:layout_constraintTop_toBottomOf="@id/email" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/signInBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+
+                    android:text="@string/signIn"
+                    android:background="@drawable/round_button"
+
+                    app:layout_constraintTop_toBottomOf="@id/password"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signUpRedirectText"
+                    android:text="@string/signUpRedirectText"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
