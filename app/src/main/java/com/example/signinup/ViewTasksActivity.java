@@ -36,8 +36,7 @@ public class ViewTasksActivity extends AppCompatActivity {
 
         // Fetch the data from the database
         db = databaseHelper.getReadableDatabase();
-        //Cursor cursor = db.rawQuery("SELECT * FROM todos", null);     //Printing all tasks what have in table
-        //Cursor cursor = db.rawQuery("SELECT * FROM tasks WHERE user_id = <user_id>", null);
+
         Integer userId = AuthHelper.getLoggedInUserId();
         String[] args = {String.valueOf(userId)};
         Cursor cursor = db.rawQuery("SELECT * FROM  todos  WHERE user_id = ?", args);
