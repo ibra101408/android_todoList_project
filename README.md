@@ -30,17 +30,6 @@ The Todo List App is an Android application that allows users to sign up, sign i
 - Android device running Android 5.0 (Lollipop) or higher.
 - Android Studio 4.0 or later.
 
-## Screenshots
-
-- Sign In form
-![photo_2023-06-08_18-54-43](https://github.com/ibra101408/android_todoList_project/assets/71323230/be9c8f7c-48d9-40ad-acc3-7c617429aa8c)
-
-- Main menu page
-![photo_2023-06-08_18-54-43 (3)](https://github.com/ibra101408/android_todoList_project/assets/71323230/7a6ace6f-8588-4a3f-a3a8-a68f312adf1f)
-
-- Task Creation page
-![photo_2023-06-08_18-54-43 (2)](https://github.com/ibra101408/android_todoList_project/assets/71323230/6a15093b-37d2-4c57-a671-b0632b5458f9)
-
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
